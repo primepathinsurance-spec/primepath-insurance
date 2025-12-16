@@ -1,43 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PrimePath Insurance Services</title>
+<title>PrimePath Insurance Services vapi</title>
 <style>
+:root{
+  --primary:#2563eb;
+  --secondary:#22c55e;
+  --dark:#1e293b;
+}
 body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6fb;color:#333}
-header{background:#fff;padding:15px 40px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-header img{height:55px}
-nav a{margin-left:20px;text-decoration:none;font-weight:bold;color:#1e3a8a}
-.hero{background:linear-gradient(135deg,#2563eb,#1e40af);color:#fff;text-align:center;padding:80px 20px}
-.hero h1{font-size:42px;margin-bottom:10px}
-.hero p{font-size:18px;max-width:700px;margin:auto}
-.section{padding:60px 40px;max-width:1100px;margin:auto}
-.section h2{text-align:center;color:#1e40af;margin-bottom:40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
-.card{background:#fff;padding:25px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
-.card h3{color:#2563eb;margin-bottom:10px}
+header{background:#fff;padding:14px 40px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 6px 20px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+header .logo{display:flex;align-items:center;gap:12px}
+header img{height:72px;width:auto}
+nav a{margin-left:22px;text-decoration:none;font-weight:700;color:var(--primary);position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));transition:.3s;border-radius:4px}
+nav a:hover::after{width:100%}
+.hero{background:linear-gradient(135deg,#2563eb,#22c55e);color:#fff;text-align:center;padding:90px 20px}
+.hero h1{font-size:44px;margin-bottom:12px}
+.hero p{font-size:18px;max-width:760px;margin:auto}
+.section{padding:70px 40px;max-width:1100px;margin:auto}
+.section h2{text-align:center;color:var(--primary);margin-bottom:44px;font-size:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.card{background:#fff;padding:28px;border-radius:18px;box-shadow:0 10px 24px rgba(0,0,0,.08);text-align:center;transition:.35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 34px rgba(0,0,0,.12)}
+.card h3{color:var(--primary);margin-bottom:10px}
 .contact{text-align:center}
-footer{background:#1e293b;color:#fff;text-align:center;padding:20px}
-.btn{display:inline-block;margin-top:20px;background:#22c55e;color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:bold}
+footer{background:var(--dark);color:#fff;text-align:center;padding:22px}
+.btn{display:inline-block;margin-top:24px;background:linear-gradient(90deg,var(--secondary),#16a34a);color:#fff;padding:14px 28px;border-radius:40px;text-decoration:none;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.btn:hover{opacity:.95}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;border-radius:50px;padding:14px 20px;font-weight:800;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.25)}
 </style>
 </head>
 <body>
 
 <header>
-<img src="primepath-logo.png" alt="PrimePath Insurance Logo">
-<nav>
-<a href="#services">Services</a>
-<a href="#about">Why Us</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="logo">
+    <img src="primepath insurance.png" alt="PrimePath Insurance Logo">
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-<h1>PrimePath Insurance Services</h1>
+<h1>PrimePath Insurance Services Vapi</h1>
 <p>Your trusted path to Motor, Health, Life & Commercial Vehicle Insurance</p>
-<a class="btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a>
+<a class="btn" href="https://wa.me/919724297016">WhatsApp Us</a>
 </section>
 
 <section id="services" class="section">
@@ -61,8 +73,8 @@ footer{background:#1e293b;color:#fff;text-align:center;padding:20px}
 
 <section id="contact" class="section contact">
 <h2>Contact Us</h2>
-<p><strong>PrimePath Insurance Services</strong></p>
-<p>📞 +91-XXXXXXXXXX</p>
+<p><strong>PrimePath Insurance Services Vapi</strong></p>
+<p>📞 +91-9724297016</p>
 <p>📧 primepathinsurance@email.com</p>
 <p>📍 Your Office Address</p>
 </section>
@@ -70,6 +82,8 @@ footer{background:#1e293b;color:#fff;text-align:center;padding:20px}
 <footer>
 <p>© 2025 PrimePath Insurance Services. All Rights Reserved.</p>
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/919724297016">WhatsApp</a>
 
 </body>
 </html>
